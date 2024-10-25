@@ -27,9 +27,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: |
-          abhilitcode/reviewapp:latest
-          abhilitcode/reviewapp:${{ github.sha }}  # Tag with commit SHA for versioning
+        tags: abhilitcode/app:latest
         builder: default
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
